@@ -1,0 +1,1531 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Sohib Matematika — Bimbel les matematika untuk siswa SD, SMP, dan SMA. Program Reguler & Privat dengan tutor berpengalaman dan pendekatan konsep yang ramah.">
+<title>Sohib Matematika — Les Matematika SD–SMA</title>
+
+<!-- Open Graph / Social Share -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Sohib Matematika — Les Matematika SD–SMA">
+<meta property="og:description" content="Bimbel les matematika SD, SMP, dan SMA. Program Reguler & Privat dengan tutor berpengalaman dan pendekatan personal.">
+<meta property="og:url" content="https://sohibmatematika.id">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Sohib Matematika — Les Matematika SD–SMA">
+<meta name="twitter:description" content="Bimbel les matematika untuk siswa SD, SMP, dan SMA. Program Reguler & Privat.">
+
+<!-- Favicon (SVG inline) -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%232563eb'/%3E%3Ctext y='.85em' font-size='65' x='50%25' dominant-baseline='middle' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='bold'%3ES%3C/text%3E%3C/svg%3E">
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+  /* ============ RESET & DESIGN SYSTEM ============ */
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --navy: #081226;
+    --navy-2: #0f2244;
+    --navy-3: #1a2f55;
+    --primary: #2563eb;
+    --primary-dark: #1d4ed8;
+    --primary-light: #3b82f6;
+    --accent: #f59e0b;
+    --accent-hover: #d97706;
+    --bg: #f8fafc;
+    --surface: #ffffff;
+    --text: #0f172a;
+    --muted: #475569;
+    --muted-light: #94a3b8;
+    --border: #e2e8f0;
+    --radius-sm: 8px;
+    --radius: 14px;
+    --radius-lg: 20px;
+    --shadow-sm: 0 1px 3px rgba(15,23,42,0.06);
+    --shadow-md: 0 10px 25px -5px rgba(15,23,42,0.08), 0 8px 10px -6px rgba(15,23,42,0.04);
+    --shadow-lg: 0 20px 35px -10px rgba(15,23,42,0.12), 0 10px 15px -5px rgba(15,23,42,0.06);
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    color: var(--text);
+    background: var(--bg);
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
+    font-weight: 800;
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+    color: var(--navy);
+  }
+
+  a { color: inherit; text-decoration: none; }
+  ul { list-style: none; }
+
+  :focus-visible {
+    outline: 2px solid var(--primary);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+
+  .container { max-width: 1140px; margin: 0 auto; padding: 0 24px; }
+
+  /* ============ BUTTONS ============ */
+  .btn {
+    display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+    padding: 14px 26px; border-radius: 10px; font-weight: 600; font-size: 0.95rem;
+    font-family: 'Plus Jakarta Sans', 'Inter', sans-serif; cursor: pointer; border: none;
+    transition: all .2s ease; white-space: nowrap; line-height: 1;
+  }
+  .btn svg { flex-shrink: 0; }
+  .btn-primary {
+    background: var(--primary);
+    color: #fff;
+    box-shadow: 0 4px 14px rgba(37,99,235,0.35);
+  }
+  .btn-primary:hover {
+    background: var(--primary-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(37,99,235,0.45);
+  }
+  .btn-wa {
+    background: #25D366;
+    color: #ffffff;
+    box-shadow: 0 4px 14px rgba(37,211,102,0.35);
+  }
+  .btn-wa:hover {
+    background: #1eb956;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(37,211,102,0.45);
+  }
+  .btn-outline {
+    background: var(--surface);
+    color: var(--navy);
+    border: 1.5px solid var(--border);
+  }
+  .btn-outline:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+    background: #eff6ff;
+  }
+  .btn-outline-light {
+    background: rgba(255,255,255,0.1);
+    color: #fff;
+    border: 1.5px solid rgba(255,255,255,0.3);
+    backdrop-filter: blur(8px);
+  }
+  .btn-outline-light:hover {
+    background: rgba(255,255,255,0.2);
+    border-color: #fff;
+  }
+  .btn-sm { padding: 10px 18px; font-size: 0.88rem; border-radius: 8px; }
+  .btn-block { width: 100%; }
+
+  /* ============ HEADER ============ */
+  .header {
+    position: sticky; top: 0; z-index: 100;
+    background: rgba(255,255,255,0.95);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
+    transition: all .25s ease;
+  }
+  .nav {
+    display: flex; align-items: center; justify-content: space-between;
+    max-width: 1140px; margin: 0 auto; padding: 16px 24px;
+  }
+  .logo {
+    display: flex; align-items: center; gap: 10px;
+    font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800; font-size: 1.15rem;
+    color: var(--navy); letter-spacing: -0.02em;
+  }
+  .logo-mark {
+    width: 36px; height: 36px; border-radius: 8px;
+    background: var(--primary);
+    display: grid; place-items: center; color: #fff;
+    font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800; font-size: 1.1rem;
+  }
+  .nav-links { display: flex; align-items: center; gap: 32px; }
+  .nav-links a:not(.btn) {
+    font-size: 0.92rem; font-weight: 600; color: var(--muted);
+    transition: color .2s; position: relative; padding: 4px 0;
+  }
+  .nav-links a:not(.btn):hover, .nav-links a:not(.btn).active {
+    color: var(--primary);
+  }
+  .nav-links a:not(.btn).active::after {
+    content: ''; position: absolute; bottom: -4px; left: 0; right: 0;
+    height: 2px; background: var(--primary); border-radius: 2px;
+  }
+  .menu-toggle {
+    display: none; background: none; border: none; cursor: pointer;
+    color: var(--navy); padding: 4px;
+  }
+  .menu-toggle .icon-close { display: none; }
+  .menu-toggle.open .icon-open { display: none; }
+  .menu-toggle.open .icon-close { display: block; }
+
+  /* ============ HERO SECTION ============ */
+  .hero {
+    position: relative;
+    overflow: hidden;
+    padding: 100px 0 130px;
+    background-color: var(--navy);
+    background-image:
+      linear-gradient(180deg, rgba(8, 18, 38, 0.88) 0%, rgba(8, 18, 38, 0.84) 40%, rgba(10, 24, 48, 0.96) 100%),
+      radial-gradient(ellipse at 50% 30%, rgba(37, 99, 235, 0.35) 0%, transparent 65%),
+      url('https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=1920&q=80');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+  }
+  .hero-inner {
+    position: relative; z-index: 2; text-align: center; max-width: 860px; margin: 0 auto;
+  }
+  .hero-kicker {
+    display: inline-block;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: #93c5fd;
+    margin-bottom: 20px;
+  }
+  .hero h1 {
+    font-size: clamp(2.2rem, 5vw, 3.5rem);
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    color: #ffffff;
+    line-height: 1.2;
+    margin-bottom: 24px;
+  }
+  .hero h1 .highlight {
+    color: #fbbf24;
+  }
+  .hero-sub {
+    font-size: clamp(1.05rem, 1.8vw, 1.2rem);
+    color: rgba(255, 255, 255, 0.86);
+    max-width: 680px;
+    margin: 0 auto 36px;
+    line-height: 1.65;
+  }
+  .hero-cta {
+    display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-bottom: 40px;
+  }
+  .hero-meta {
+    display: flex; gap: 24px; justify-content: center; flex-wrap: wrap;
+    font-size: 0.9rem; color: rgba(255, 255, 255, 0.8);
+  }
+  .hero-meta span::before {
+    content: '•'; color: var(--accent); margin-right: 8px; font-weight: 900;
+  }
+
+  /* Stats bar */
+  .hero-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 50px;
+    padding: 24px 30px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: var(--radius);
+  }
+  .hero-stat { text-align: center; }
+  .hero-stat .stat-num {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 800;
+    font-size: 1.8rem;
+    color: #ffffff;
+    line-height: 1.1;
+    margin-bottom: 4px;
+  }
+  .hero-stat .stat-num span { color: var(--accent); }
+  .hero-stat .stat-label {
+    font-size: 0.82rem;
+    color: rgba(255, 255, 255, 0.75);
+    font-weight: 500;
+  }
+
+  /* ============ TRUST STRIP ============ */
+  .trust-strip { position: relative; z-index: 10; margin-top: -40px; }
+  .trust-card {
+    background: var(--surface);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-lg);
+    border: 1px solid var(--border);
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+  }
+  .trust-item { display: flex; align-items: flex-start; gap: 14px; }
+  .trust-item .t-ico {
+    flex-shrink: 0; width: 44px; height: 44px; border-radius: 10px;
+    background: #eff6ff; display: grid; place-items: center; color: var(--primary);
+  }
+  .trust-item strong { display: block; font-size: 0.95rem; color: var(--navy); margin-bottom: 2px; }
+  .trust-item span { font-size: 0.82rem; color: var(--muted); line-height: 1.45; }
+
+  /* ============ GENERIC SECTION ============ */
+  .section { padding: 90px 0; }
+  .section-alt { background: var(--surface); }
+  .section-tag {
+    display: inline-block;
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--primary);
+    margin-bottom: 12px;
+  }
+  .section-head { text-align: center; max-width: 660px; margin: 0 auto 52px; }
+  .section-head h2 { font-size: clamp(1.8rem, 3.5vw, 2.4rem); margin-bottom: 14px; }
+  .section-head p { color: var(--muted); font-size: 1.05rem; }
+
+  /* ============ PROBLEMS / ASYMMETRIC SPLIT ============ */
+  .problem-split {
+    display: grid;
+    grid-template-columns: 1fr 1.15fr;
+    gap: 48px;
+    align-items: center;
+  }
+  .problem-photo-wrap {
+    position: relative;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+  }
+  .problem-photo-wrap img {
+    width: 100%;
+    height: 480px;
+    object-fit: cover;
+    display: block;
+  }
+  .problem-photo-badge {
+    position: absolute;
+    bottom: 24px; left: 24px; right: 24px;
+    background: rgba(8, 18, 38, 0.88);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255,255,255,0.15);
+    padding: 18px 22px;
+    border-radius: var(--radius);
+    color: #fff;
+  }
+  .problem-photo-badge p {
+    font-size: 0.92rem; line-height: 1.5; color: rgba(255,255,255,0.9);
+  }
+  .problem-photo-badge strong { color: #fbbf24; }
+  .problem-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+  .problem-row {
+    display: flex;
+    gap: 16px;
+    padding: 16px 20px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    transition: transform .2s ease, border-color .2s ease;
+  }
+  .problem-row:hover {
+    transform: translateX(4px);
+    border-color: #cbd5e1;
+  }
+  .problem-ico {
+    flex-shrink: 0;
+    width: 36px; height: 36px;
+    border-radius: 8px;
+    background: #fef2f2;
+    color: #dc2626;
+    display: grid;
+    place-items: center;
+  }
+  .problem-content h4 {
+    font-size: 1rem; color: var(--navy); margin-bottom: 3px; font-weight: 700;
+  }
+  .problem-content p {
+    font-size: 0.88rem; color: var(--muted); line-height: 1.5;
+  }
+
+  /* ============ WHY ============ */
+  .why-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+  .why-card {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: var(--radius); padding: 32px 24px;
+    transition: transform .25s ease, box-shadow .25s ease;
+  }
+  .why-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); border-color: #cbd5e1; }
+  .why-ico {
+    width: 48px; height: 48px; border-radius: 10px;
+    background: #eff6ff;
+    display: grid; place-items: center; color: var(--primary);
+    margin-bottom: 20px;
+  }
+  .why-card h3 { font-size: 1.1rem; margin-bottom: 8px; color: var(--navy); }
+  .why-card p { font-size: 0.9rem; color: var(--muted); line-height: 1.6; }
+
+  /* ============ PROGRAMS ============ */
+  .programs-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; margin-bottom: 36px; }
+  .program-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 40px 36px;
+    transition: all .25s ease;
+  }
+  .program-card:hover { box-shadow: var(--shadow-lg); transform: translateY(-3px); }
+  .program-card.featured {
+    background: var(--navy-2);
+    color: #fff;
+    border-color: transparent;
+  }
+  .program-card.featured h3 { color: #fff; }
+  .program-card.featured p { color: rgba(255,255,255,0.78); }
+  .program-card.featured li { color: rgba(255,255,255,0.9); }
+  .program-card.featured .check-ico { color: var(--accent); }
+  .program-tag-label {
+    display: inline-block; font-size: 0.78rem; font-weight: 700;
+    letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--primary); margin-bottom: 14px;
+  }
+  .program-card.featured .program-tag-label { color: var(--accent); }
+  .program-card h3 { font-size: 1.6rem; margin-bottom: 12px; }
+  .program-card > p { font-size: 0.95rem; color: var(--muted); margin-bottom: 26px; }
+  .program-list { margin-bottom: 30px; }
+  .program-list li {
+    display: flex; align-items: flex-start; gap: 12px;
+    font-size: 0.92rem; color: var(--navy); padding: 8px 0;
+  }
+  .check-ico { color: var(--primary); flex-shrink: 0; margin-top: 3px; }
+
+  /* Comparison table */
+  .compare-wrap {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: var(--radius); overflow-x: auto; box-shadow: var(--shadow-sm);
+  }
+  .compare-table { width: 100%; min-width: 480px; border-collapse: collapse; }
+  .compare-table th, .compare-table td {
+    padding: 18px 24px; text-align: left; font-size: 0.92rem;
+    border-bottom: 1px solid var(--border);
+  }
+  .compare-table thead th {
+    background: #f8fafc; font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 700; font-size: 0.88rem; color: var(--navy);
+  }
+  .compare-table tbody tr:last-child td { border-bottom: none; }
+  .compare-table td:first-child { font-weight: 600; color: var(--navy); }
+  .compare-table td { color: var(--muted); }
+
+  /* ============ LEVELS (JENJANG) WITH REAL PHOTOS ============ */
+  .levels-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+  .level-card {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: var(--radius-lg); overflow: hidden;
+    transition: transform .25s ease, box-shadow .25s ease;
+    display: flex; flex-direction: column;
+  }
+  .level-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+  .level-img-wrap {
+    height: 180px; width: 100%; position: relative; overflow: hidden;
+  }
+  .level-img-wrap img {
+    width: 100%; height: 100%; object-fit: cover;
+    transition: transform .35s ease;
+  }
+  .level-card:hover .level-img-wrap img { transform: scale(1.05); }
+  .level-label-overlay {
+    position: absolute; bottom: 12px; left: 16px;
+    background: rgba(8, 18, 38, 0.85);
+    color: #fff; font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 0.82rem; font-weight: 800; padding: 4px 12px;
+    border-radius: 6px; letter-spacing: 0.05em;
+  }
+  .level-body {
+    padding: 26px 24px; flex: 1; display: flex; flex-direction: column;
+  }
+  .level-body h3 { font-size: 1.25rem; margin-bottom: 14px; }
+  .level-body ul { margin-bottom: 24px; flex: 1; }
+  .level-body li {
+    display: flex; align-items: flex-start; gap: 10px;
+    font-size: 0.9rem; color: var(--muted); padding: 6px 0;
+  }
+
+  /* ============ METHOD ============ */
+  .method-grid {
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; position: relative;
+  }
+  .method-grid::before {
+    content: ''; position: absolute;
+    top: 28px; left: calc(12.5% + 4px); right: calc(12.5% + 4px);
+    height: 2px;
+    background: #cbd5e1;
+    z-index: 1;
+  }
+  .method-step { text-align: center; position: relative; z-index: 2; }
+  .method-num {
+    width: 56px; height: 56px; margin: 0 auto 20px;
+    border-radius: 50%; display: grid; place-items: center;
+    background: var(--navy-2);
+    color: #fff; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800;
+    font-size: 1.25rem; border: 4px solid var(--bg);
+    box-shadow: var(--shadow-sm);
+  }
+  .method-step h4 { font-size: 1.05rem; margin-bottom: 8px; color: var(--navy); }
+  .method-step p { font-size: 0.88rem; color: var(--muted); line-height: 1.6; }
+
+  /* ============ TUTORS WITH REAL PORTRAITS ============ */
+  .tutors-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+  .tutor-card {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: var(--radius-lg); overflow: hidden;
+    transition: transform .25s ease, box-shadow .25s ease;
+  }
+  .tutor-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
+  .tutor-img-wrap {
+    height: 220px; width: 100%; position: relative; overflow: hidden;
+    background: #e2e8f0;
+  }
+  .tutor-img-wrap img {
+    width: 100%; height: 100%; object-fit: cover; object-position: center top;
+  }
+  .tutor-body { padding: 24px; }
+  .tutor-body h4 { font-size: 1.15rem; margin-bottom: 4px; color: var(--navy); }
+  .tutor-body .tutor-edu {
+    font-size: 0.85rem; font-weight: 600; color: var(--primary); margin-bottom: 14px;
+  }
+  .tutor-meta {
+    font-size: 0.88rem; color: var(--text); padding-top: 14px;
+    border-top: 1px solid var(--border);
+  }
+  .tutor-meta span { display: block; padding: 3px 0; color: var(--muted); }
+  .tutor-meta strong { color: var(--navy); font-weight: 600; }
+
+  /* ============ TESTIMONIALS ============ */
+  .testi-summary {
+    text-align: center; margin-bottom: 36px;
+  }
+  .testi-summary .stars { color: var(--accent); font-size: 1.25rem; letter-spacing: 2px; }
+  .testi-summary .score {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 1.1rem; font-weight: 800; color: var(--navy); margin-left: 8px;
+  }
+  .testi-summary .detail { font-size: 0.92rem; color: var(--muted); margin-left: 6px; }
+  .testi-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px; }
+  .testi-card {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: var(--radius-lg); padding: 32px 28px;
+    display: flex; flex-direction: column; justify-content: space-between;
+    transition: transform .25s ease, box-shadow .25s ease;
+  }
+  .testi-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
+  .testi-stars { color: var(--accent); font-size: 0.95rem; margin-bottom: 14px; letter-spacing: 2px; }
+  .testi-card blockquote {
+    font-size: 0.95rem; color: var(--navy); line-height: 1.65;
+    margin-bottom: 24px; font-style: normal;
+  }
+  .testi-author { display: flex; align-items: center; gap: 14px; }
+  .testi-avatar {
+    width: 48px; height: 48px; border-radius: 50%; overflow: hidden; flex-shrink: 0;
+  }
+  .testi-avatar img { width: 100%; height: 100%; object-fit: cover; }
+  .testi-author strong { display: block; font-size: 0.92rem; color: var(--navy); }
+  .testi-author span { font-size: 0.8rem; color: var(--muted); }
+
+  /* ============ PRICING ============ */
+  .pricing-tabs {
+    display: flex; justify-content: center; gap: 8px;
+    margin: 0 auto 36px; padding: 6px; background: #e2e8f0;
+    border-radius: 10px; max-width: 320px;
+  }
+  .pricing-tab-btn {
+    flex: 1; padding: 9px 18px; border: none; background: transparent;
+    font-family: 'Plus Jakarta Sans', sans-serif; font-size: 0.88rem;
+    font-weight: 700; color: var(--muted); border-radius: 6px;
+    cursor: pointer; transition: all .2s ease;
+  }
+  .pricing-tab-btn:hover { color: var(--navy); }
+  .pricing-tab-btn.active {
+    background: var(--surface); color: var(--primary);
+    box-shadow: var(--shadow-sm);
+  }
+  .pricing-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+  .price-card {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: var(--radius-lg); padding: 32px 24px;
+    display: flex; flex-direction: column;
+    transition: transform .25s ease, box-shadow .25s ease;
+  }
+  .price-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+  .price-card.popular {
+    border: 2px solid var(--primary);
+    box-shadow: var(--shadow-md);
+    position: relative;
+  }
+  .popular-top {
+    font-size: 0.72rem; font-weight: 800; letter-spacing: 0.08em;
+    text-transform: uppercase; color: var(--primary); margin-bottom: 8px;
+  }
+  .price-type {
+    font-size: 0.8rem; font-weight: 700; letter-spacing: 0.1em;
+    text-transform: uppercase; color: var(--muted); margin-bottom: 6px;
+  }
+  .price-card.popular .price-type { color: var(--primary); }
+  .price-sessions {
+    font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800;
+    font-size: 1.2rem; color: var(--navy); margin-bottom: 16px;
+  }
+  .price-amount {
+    font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800;
+    font-size: 2rem; color: var(--navy); line-height: 1; margin-bottom: 4px;
+  }
+  .price-save {
+    display: inline-block; background: #dcfce7; color: #15803d;
+    font-size: 0.75rem; font-weight: 700; padding: 2px 8px; border-radius: 4px;
+    margin-left: 6px; vertical-align: middle;
+  }
+  .price-per { font-size: 0.82rem; color: var(--muted); margin-bottom: 24px; }
+  .price-features {
+    flex: 1; margin-bottom: 24px; padding-top: 20px; border-top: 1px solid var(--border);
+  }
+  .price-features li {
+    display: flex; align-items: flex-start; gap: 10px;
+    font-size: 0.86rem; color: var(--muted); padding: 5px 0;
+  }
+  .price-card.hidden { display: none; }
+  .price-note {
+    text-align: center; margin-top: 32px; font-size: 0.88rem; color: var(--muted);
+  }
+
+  /* ============ FAQ ============ */
+  .faq-list { max-width: 780px; margin: 0 auto; }
+  .faq-item {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: var(--radius); margin-bottom: 12px;
+    overflow: hidden; transition: border-color .2s;
+  }
+  .faq-item.open { border-color: #bfdbfe; }
+  .faq-q {
+    width: 100%; display: flex; align-items: center; justify-content: space-between;
+    gap: 16px; padding: 20px 24px; background: none; border: none;
+    text-align: left; cursor: pointer; font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 0.98rem; font-weight: 700; color: var(--navy);
+  }
+  .faq-icon {
+    flex-shrink: 0; width: 30px; height: 30px; border-radius: 6px;
+    background: #f1f5f9; display: grid; place-items: center;
+    color: var(--primary); transition: transform .25s ease;
+  }
+  .faq-item.open .faq-icon { transform: rotate(45deg); background: var(--primary); color: #fff; }
+  .faq-a {
+    display: grid; grid-template-rows: 0fr; transition: grid-template-rows .25s ease;
+  }
+  .faq-a > div { overflow: hidden; }
+  .faq-a p { padding: 0 24px 22px; font-size: 0.92rem; color: var(--muted); line-height: 1.7; }
+  .faq-item.open .faq-a { grid-template-rows: 1fr; }
+
+  /* ============ CTA FINAL WITH REAL PHOTO ============ */
+  .cta-section {
+    position: relative; overflow: hidden;
+    padding: 100px 0; text-align: center;
+    background:
+      linear-gradient(180deg, rgba(8, 18, 38, 0.92) 0%, rgba(15, 34, 68, 0.95) 100%),
+      url('https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1600&q=80') center center / cover no-repeat;
+    color: #fff;
+  }
+  .cta-section .container { position: relative; z-index: 2; max-width: 720px; }
+  .cta-section h2 {
+    font-size: clamp(2rem, 4vw, 2.7rem); color: #fff; margin-bottom: 16px;
+  }
+  .cta-section p {
+    color: rgba(255,255,255,0.85); font-size: 1.08rem; margin-bottom: 36px; line-height: 1.65;
+  }
+  .cta-buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+
+  /* ============ FOOTER ============ */
+  .footer {
+    background: #050b18; color: rgba(255,255,255,0.65);
+    padding: 68px 0 32px; font-size: 0.9rem;
+  }
+  .footer-grid {
+    display: grid; grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 40px; margin-bottom: 48px;
+  }
+  .footer-brand .logo { color: #fff; margin-bottom: 16px; }
+  .footer-brand p { font-size: 0.9rem; line-height: 1.7; max-width: 320px; color: rgba(255,255,255,0.6); }
+  .footer h5 {
+    font-family: 'Plus Jakarta Sans', sans-serif; font-size: 0.85rem; font-weight: 700;
+    letter-spacing: 0.08em; text-transform: uppercase; color: #fff; margin-bottom: 18px;
+  }
+  .footer ul li { padding: 6px 0; }
+  .footer ul a { color: rgba(255,255,255,0.6); transition: color .2s; }
+  .footer ul a:hover { color: #fff; }
+  .footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.08);
+    padding-top: 24px; display: flex; justify-content: space-between;
+    align-items: center; flex-wrap: wrap; gap: 12px;
+    font-size: 0.85rem; color: rgba(255,255,255,0.5);
+  }
+
+  /* ============ FLOATING ACTIONS ============ */
+  .wa-float {
+    position: fixed; bottom: 24px; right: 24px; z-index: 90;
+    width: 60px; height: 60px; border-radius: 50%;
+    background: #25D366; color: #fff;
+    display: grid; place-items: center;
+    box-shadow: 0 8px 24px rgba(37,211,102,0.45);
+    transition: transform .25s ease;
+  }
+  .wa-float:hover { transform: scale(1.08); }
+  .back-top {
+    position: fixed; bottom: 96px; right: 28px; z-index: 90;
+    width: 44px; height: 44px; border-radius: 8px;
+    background: var(--navy); color: #fff;
+    display: grid; place-items: center; cursor: pointer;
+    border: none; opacity: 0; visibility: hidden;
+    transition: all .25s; box-shadow: var(--shadow-md);
+  }
+  .back-top.show { opacity: 1; visibility: visible; }
+  .back-top:hover { background: var(--primary); }
+
+  /* ============ REVEAL ANIMATION ============ */
+  [data-reveal] {
+    opacity: 0; transform: translateY(24px);
+    transition: opacity .6s cubic-bezier(.2,.7,.2,1), transform .6s cubic-bezier(.2,.7,.2,1);
+  }
+  [data-reveal].revealed { opacity: 1; transform: translateY(0); }
+  .stagger > [data-reveal]:nth-child(1) { transition-delay: 0s; }
+  .stagger > [data-reveal]:nth-child(2) { transition-delay: .08s; }
+  .stagger > [data-reveal]:nth-child(3) { transition-delay: .16s; }
+  .stagger > [data-reveal]:nth-child(4) { transition-delay: .24s; }
+  .stagger > [data-reveal]:nth-child(5) { transition-delay: .32s; }
+  .stagger > [data-reveal]:nth-child(6) { transition-delay: .40s; }
+
+  /* ============ RESPONSIVE BREAKPOINTS ============ */
+  @media (max-width: 992px) {
+    .trust-card { grid-template-columns: repeat(2, 1fr); }
+    .hero-stats { grid-template-columns: repeat(2, 1fr); gap: 16px; }
+    .problem-split { grid-template-columns: 1fr; }
+    .problem-photo-wrap img { height: 360px; }
+    .why-grid { grid-template-columns: repeat(2, 1fr); }
+    .method-grid { grid-template-columns: repeat(2, 1fr); gap: 32px; }
+    .method-grid::before { display: none; }
+    .pricing-grid { grid-template-columns: repeat(2, 1fr); }
+    .footer-grid { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 768px) {
+    .nav-links {
+      position: fixed; top: 68px; left: 0; right: 0;
+      background: var(--surface); flex-direction: column;
+      padding: 20px 24px; gap: 4px; align-items: stretch;
+      border-bottom: 1px solid var(--border);
+      box-shadow: var(--shadow-md);
+      transform: translateY(-120%); opacity: 0; pointer-events: none;
+      transition: all .25s ease;
+    }
+    .nav-links.open { transform: translateY(0); opacity: 1; pointer-events: auto; }
+    .nav-links a:not(.btn) { padding: 12px 0; border-bottom: 1px solid var(--border); }
+    .nav-links .btn { margin-top: 12px; justify-content: center; }
+    .menu-toggle { display: block; }
+
+    .hero { padding: 70px 0 100px; }
+    .hero-stats { grid-template-columns: 1fr 1fr; padding: 20px 16px; }
+    .hero-cta { flex-direction: column; align-items: stretch; }
+    .hero-cta .btn { width: 100%; }
+
+    .section { padding: 64px 0; }
+    .programs-grid { grid-template-columns: 1fr; }
+    .levels-grid { grid-template-columns: 1fr; }
+    .tutors-grid { grid-template-columns: 1fr; }
+    .testi-grid { grid-template-columns: 1fr; }
+    .pricing-grid { grid-template-columns: 1fr; }
+    .trust-strip { margin-top: -30px; }
+    .trust-card { grid-template-columns: 1fr; padding: 24px; }
+    .footer-grid { grid-template-columns: 1fr; gap: 32px; }
+    .footer-bottom { flex-direction: column; text-align: center; }
+    .cta-buttons { flex-direction: column; align-items: stretch; }
+    .cta-buttons .btn { width: 100%; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="header" id="header">
+  <nav class="nav">
+    <a href="#" class="logo">
+      <span class="logo-mark">S</span>
+      Sohib Matematika
+    </a>
+    <div class="nav-links" id="navLinks">
+      <a href="#program">Program</a>
+      <a href="#jenjang">Jenjang</a>
+      <a href="#tutor">Tutor</a>
+      <a href="#harga">Harga</a>
+      <a href="#faq">FAQ</a>
+      <a href="https://wa.me/6281234567890?text=Halo%20Sohib%20Matematika%2C%20saya%20ingin%20konsultasi%20gratis." class="btn btn-primary btn-sm" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+        WhatsApp
+      </a>
+    </div>
+    <button class="menu-toggle" id="menuToggle" aria-label="Buka menu navigasi">
+      <svg class="icon-open" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      <svg class="icon-close" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+  </nav>
+</header>
+
+<!-- ============ HERO WITH REAL BACKGROUND PHOTO ============ -->
+<section class="hero">
+  <div class="container hero-inner">
+    <span class="hero-kicker" data-reveal>BIMBEL MATEMATIKA SD · SMP · SMA</span>
+    <h1 data-reveal>
+      Les Matematika yang Lebih Terarah, Nyaman, dan <span class="highlight">Paham Konsepnya</span>
+    </h1>
+    <p class="hero-sub" data-reveal>
+      Bantu anak memahami materi dari akarnya, bukan sekadar menghafal rumus. Pilihan kelas Reguler dan Privat dengan tutor berdedikasi, jadwal fleksibel, dan pendampingan intensif.
+    </p>
+    <div class="hero-cta" data-reveal>
+      <a href="https://wa.me/6281234567890?text=Halo%20Sohib%20Matematika%2C%20saya%20ingin%20konsultasi%20gratis." class="btn btn-wa" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+        Konsultasi Gratis via WhatsApp
+      </a>
+      <a href="#program" class="btn btn-outline-light">
+        Lihat Pilihan Program
+      </a>
+    </div>
+    <div class="hero-meta" data-reveal>
+      <span>Maksimal 5 Siswa / Kelas</span>
+      <span>Tutor Lulusan Kampus Ternama</span>
+      <span>Kelas Offline &amp; Online</span>
+    </div>
+
+    <!-- Verified Stats -->
+    <div class="hero-stats" data-reveal>
+      <div class="hero-stat">
+        <div class="stat-num">500<span>+</span></div>
+        <div class="stat-label">Siswa Terbantu</div>
+      </div>
+      <div class="hero-stat">
+        <div class="stat-num">4.9<span>/5</span></div>
+        <div class="stat-label">Rating Kepuasan Wali Murid</div>
+      </div>
+      <div class="hero-stat">
+        <div class="stat-num">15<span>+</span></div>
+        <div class="stat-label">Tutor Terseleksi</div>
+      </div>
+      <div class="hero-stat">
+        <div class="stat-num">100<span>%</span></div>
+        <div class="stat-label">Pendekatan Konseptual</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TRUST STRIP ============ -->
+<section class="trust-strip">
+  <div class="container">
+    <div class="trust-card" data-reveal>
+      <div class="trust-item">
+        <div class="t-ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div>
+        <div><strong>Tutor Terseleksi</strong><span>Pendidikan linear &amp; sabar menjelaskan</span></div>
+      </div>
+      <div class="trust-item">
+        <div class="t-ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+        <div><strong>Kelas Kecil</strong><span>Maksimal 5 siswa per sesi kelompok</span></div>
+      </div>
+      <div class="trust-item">
+        <div class="t-ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div>
+        <div><strong>Jadwal Fleksibel</strong><span>Pilih hari dan jam sesuai agenda anak</span></div>
+      </div>
+      <div class="trust-item">
+        <div class="t-ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
+        <div><strong>Laporan Berkala</strong><span>Evaluasi dan progres setiap 2 minggu</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ REAL PROBLEM & EMPATHY SECTION ============ -->
+<section class="section">
+  <div class="container">
+    <div class="problem-split">
+      <div class="problem-photo-wrap" data-reveal>
+        <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=800&q=80" alt="Siswa sedang belajar matematika dengan tekun" loading="lazy">
+        <div class="problem-photo-badge">
+          <p><strong>Fakta Lapangan:</strong> Sebagian besar anak yang takut matematika bukan karena tidak pintar, melainkan karena ada dasar konsep yang terlewat di jenjang sebelumnya.</p>
+        </div>
+      </div>
+      <div data-reveal>
+        <span class="section-tag">Tantangan Belajar</span>
+        <h2>Matematika Tidak Harus Menjadi Beban Pikiran Anak</h2>
+        <p style="color: var(--muted); margin-bottom: 24px; font-size: 1.02rem;">
+          Di sekolah, guru mengajar puluhan siswa sekaligus dengan kurikulum padat. Sangat wajar jika ada materi yang belum tuntas dipahami.
+        </p>
+        <div class="problem-list">
+          <div class="problem-row">
+            <div class="problem-ico">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+            </div>
+            <div class="problem-content">
+              <h4>Malu Bertanya di Kelas</h4>
+              <p>Di kelas yang ramai, siswa seringkali sungkan bertanya saat tertinggal sehingga masalah makin menumpuk.</p>
+            </div>
+          </div>
+          <div class="problem-row">
+            <div class="problem-ico">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+            </div>
+            <div class="problem-content">
+              <h4>Hafalan Rumus Cepat Bikin Bingung</h4>
+              <p>Menghafal rumus tanpa tahu asal-usulnya membuat siswa langsung macet begitu bentuk soal sedikit divariasikan.</p>
+            </div>
+          </div>
+          <div class="problem-row">
+            <div class="problem-ico">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+            </div>
+            <div class="problem-content">
+              <h4>Waktu Damping Orang Tua Terbatas</h4>
+              <p>Kesibukan kerja membuat orang tua kesulitan membimbing anak secara intensif setiap ada PR atau persiapan ulangan.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY SOHIB MATEMATIKA ============ -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <span class="section-tag">Keunggulan</span>
+      <h2>Mengapa Belajar di Sohib Matematika?</h2>
+      <p>Kami memadukan suasana belajar yang bersahabat dengan metodologi yang terstruktur dan terukur.</p>
+    </div>
+    <div class="why-grid stagger">
+      <div class="why-card" data-reveal>
+        <div class="why-ico"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg></div>
+        <h3>Materi Disesuaikan Kebutuhan</h3>
+        <p>Setiap siswa memiliki titik awal berbeda. Materi dirancang bertahap sesuai kemampuan riil siswa saat ini.</p>
+      </div>
+      <div class="why-card" data-reveal>
+        <div class="why-ico"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+        <h3>Reguler atau Privat 1-on-1</h3>
+        <p>Pilih kenyamanan belajar dalam kelompok kecil 3–5 siswa atau pendampingan eksklusif satu guru satu murid.</p>
+      </div>
+      <div class="why-card" data-reveal>
+        <div class="why-ico"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg></div>
+        <h3>Tutor Sabar &amp; Solutif</h3>
+        <p>Tutor dilatih khusus untuk menciptakan suasana aman bertanya tanpa takut disalahkan atau dianggap lambat.</p>
+      </div>
+      <div class="why-card" data-reveal>
+        <div class="why-ico"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
+        <h3>Laporan Hasil Berkala</h3>
+        <p>Orang tua menerima rangkuman materi, catatan penguasaan topik, dan grafik perkembangan secara rutin.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROGRAMS ============ -->
+<section class="section" id="program">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <span class="section-tag">Format Belajar</span>
+      <h2>Pilih Program yang Paling Sesuai</h2>
+      <p>Dua opsi program yang disesuaikan dengan ritme dan target belajar masing-masing anak.</p>
+    </div>
+
+    <div class="programs-grid">
+      <div class="program-card" data-reveal>
+        <span class="program-tag-label">Program Reguler</span>
+        <h3>Kelas Kelompok Kecil</h3>
+        <p>Maksimal 5 siswa per sesi. Menjaga suasana belajar tetap interaktif, ada teman berdiskusi, dengan biaya yang sangat ekonomis.</p>
+        <ul class="program-list">
+          <li><svg class="check-ico" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Kelompok kecil maksimal 5 siswa</li>
+          <li><svg class="check-ico" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Jadwal tetap teratur 2x per minggu</li>
+          <li><svg class="check-ico" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Sesuai kurikulum sekolah &amp; latihan soal</li>
+          <li><svg class="check-ico" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Modul cetak &amp; pembahasan tuntas</li>
+        </ul>
+        <a href="https://wa.me/6281234567890?text=Halo%2C%20saya%20ingin%20tanya%20jadwal%20program%20Reguler." class="btn btn-outline btn-block" target="_blank" rel="noopener">Tanya Jadwal Reguler</a>
+      </div>
+
+      <div class="program-card featured" data-reveal>
+        <span class="program-tag-label">Program Privat</span>
+        <h3>Pendampingan 1-on-1</h3>
+        <p>Satu tutor khusus mendampingi satu siswa. Fokus 100% pada kelemahan spesifik anak, target nilai ujian, atau persiapan olimpiade.</p>
+        <ul class="program-list">
+          <li><svg class="check-ico" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>1 Tutor khusus mendampingi 1 Siswa</li>
+          <li><svg class="check-ico" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Jadwal fleksibel menyesuaikan waktu anak</li>
+          <li><svg class="check-ico" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Bisa request materi PR atau persiapan ujian</li>
+          <li><svg class="check-ico" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Laporan progres mendalam tiap sesi</li>
+        </ul>
+        <a href="https://wa.me/6281234567890?text=Halo%2C%20saya%20ingin%20konsultasi%20program%20Privat." class="btn btn-wa btn-block" target="_blank" rel="noopener">Konsultasi Program Privat</a>
+      </div>
+    </div>
+
+    <!-- Comparison Table -->
+    <div class="compare-wrap" data-reveal>
+      <table class="compare-table">
+        <thead>
+          <tr><th>Fitur &amp; Aspek</th><th>Program Reguler</th><th>Program Privat</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Jumlah Siswa</td><td>3 sampai 5 siswa</td><td>1 Siswa (1-on-1)</td></tr>
+          <tr><td>Fleksibilitas Jadwal</td><td>Jadwal terjadwal per batch</td><td>Sangat fleksibel (bisa reschedule)</td></tr>
+          <tr><td>Fokus Materi</td><td>Kurikulum sekolah &amp; latihan umum</td><td>Custom sesuai kebutuhan / target nilai</td></tr>
+          <tr><td>Kecepatan Belajar</td><td>Mengikuti ritme kelompok</td><td>Mengikuti daya serap anak</td></tr>
+          <tr><td>Kesesuaian</td><td>Membangun kebiasaan belajar rutin</td><td>Mengejar ketertinggalan / persiapan ujian</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LEVELS (JENJANG) WITH REAL PHOTOGRAPHY ============ -->
+<section class="section section-alt" id="jenjang">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <span class="section-tag">Jenjang Pendidikan</span>
+      <h2>Kurikulum untuk Semua Jenjang</h2>
+      <p>Metode pengajaran disesuaikan dengan tahapan psikologis dan kognitif usia siswa.</p>
+    </div>
+    <div class="levels-grid stagger">
+      <div class="level-card" data-reveal>
+        <div class="level-img-wrap">
+          <img src="https://images.unsplash.com/photo-1588072432836-e10032774350?auto=format&fit=crop&w=600&q=80" alt="Siswa SD sedang belajar matematika" loading="lazy">
+          <span class="level-label-overlay">SD (Kelas 1–6)</span>
+        </div>
+        <div class="level-body">
+          <h3>Sekolah Dasar</h3>
+          <ul>
+            <li><svg class="check-ico" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Membangun fondasi logika dan berhitung cepat</li>
+            <li><svg class="check-ico" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Keterampilan memecahkan soal cerita</li>
+            <li><svg class="check-ico" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Belajar tanpa tekanan agar anak suka matematika</li>
+            <li><svg class="check-ico" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Persiapan ujian kenaikan kelas &amp; kelulusan</li>
+          </ul>
+          <a href="https://wa.me/6281234567890?text=Halo%2C%20saya%20tertarik%20les%20matematika%20SD." class="btn btn-outline btn-block btn-sm" target="_blank" rel="noopener">Konsultasi Program SD</a>
+        </div>
+      </div>
+
+      <div class="level-card" data-reveal>
+        <div class="level-img-wrap">
+          <img src="https://images.unsplash.com/photo-1529390079861-591de354faf5?auto=format&fit=crop&w=600&q=80" alt="Siswa SMP sedang berlatih soal matematika" loading="lazy">
+          <span class="level-label-overlay">SMP (Kelas 7–9)</span>
+        </div>
+        <div class="level-body">
+          <h3>Sekolah Menengah Pertama</h3>
+          <ul>
+            <li><svg class="check-ico" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Penguasaan Aljabar, Geometri, dan Peluang</li>
+            <li><svg class="check-ico" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Jembatan transisi konsep dari SD ke tingkat lanjut</li>
+            <li><svg class="check-ico" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Pendampingan intensif PTS, PAS, dan Ujian Akhir</li>
+            <li><svg class="check-ico" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Persiapan masuk SMA/SMK favorit</li>
+          </ul>
+          <a href="https://wa.me/6281234567890?text=Halo%2C%20saya%20tertarik%20les%20matematika%20SMP." class="btn btn-outline btn-block btn-sm" target="_blank" rel="noopener">Konsultasi Program SMP</a>
+        </div>
+      </div>
+
+      <div class="level-card" data-reveal>
+        <div class="level-img-wrap">
+          <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=600&q=80" alt="Siswa SMA sedang persiapan ujian masuk perguruan tinggi" loading="lazy">
+          <span class="level-label-overlay">SMA (Kelas 10–12)</span>
+        </div>
+        <div class="level-body">
+          <h3>Sekolah Menengah Atas</h3>
+          <ul>
+            <li><svg class="check-ico" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Matematika Wajib, Peminatan, Kalkulus, Vektor</li>
+            <li><svg class="check-ico" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Penyelesaian soal berpikir tingkat tinggi (HOTS)</li>
+            <li><svg class="check-ico" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Persiapan SNBT / UTBK Penalaran Matematika</li>
+            <li><svg class="check-ico" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Strategi manajemen waktu dalam ujian</li>
+          </ul>
+          <a href="https://wa.me/6281234567890?text=Halo%2C%20saya%20tertarik%20les%20matematika%20SMA." class="btn btn-outline btn-block btn-sm" target="_blank" rel="noopener">Konsultasi Program SMA</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ METHOD ============ -->
+<section class="section">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <span class="section-tag">Alur Belajar</span>
+      <h2>4 Langkah Sistematis Menuju Pemahaman Tuntas</h2>
+      <p>Kami tidak langsung membebani siswa dengan rumus, melainkan memetakan kemampuan dari awal.</p>
+    </div>
+    <div class="method-grid stagger">
+      <div class="method-step" data-reveal>
+        <div class="method-num">1</div>
+        <h4>Diagnosa Awal</h4>
+        <p>Tes pemetaan singkat untuk menemukan bagian konsep mana yang belum tuntas dikuasai.</p>
+      </div>
+      <div class="method-step" data-reveal>
+        <div class="method-num">2</div>
+        <h4>Rencana Belajar</h4>
+        <p>Menyusun target belajar mingguan yang realistis berdasarkan target nilai dan kurikulum sekolah.</p>
+      </div>
+      <div class="method-step" data-reveal>
+        <div class="method-num">3</div>
+        <h4>Pendampingan Aktif</h4>
+        <p>Penjelasan logika konsep, pembongkaran pola soal, dan latihan terarah secara dua arah.</p>
+      </div>
+      <div class="method-step" data-reveal>
+        <div class="method-num">4</div>
+        <h4>Evaluasi &amp; Laporan</h4>
+        <p>Kuis berkala dan laporan kemajuan belajar yang dikirimkan langsung ke orang tua.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TUTORS WITH REAL PHOTOS ============ -->
+<section class="section section-alt" id="tutor">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <span class="section-tag">Tim Pengajar</span>
+      <h2>Tutor Berdedikasi &amp; Berpengalaman</h2>
+      <p>Lulusan program studi linear dari perguruan tinggi terkemuka dengan keahlian pedagogi dan komunikasi yang hangat.</p>
+    </div>
+    <div class="tutors-grid stagger">
+      <div class="tutor-card" data-reveal>
+        <div class="tutor-img-wrap">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=500&q=80" alt="Kak Budi W., S.Si — Tutor Matematika" loading="lazy">
+        </div>
+        <div class="tutor-body">
+          <h4>Kak Budi W., S.Si</h4>
+          <p class="tutor-edu">S1 Matematika Murni — Universitas Indonesia</p>
+          <div class="tutor-meta">
+            <span><strong>Pengalaman:</strong> 5+ tahun mengajar SD &amp; SMP</span>
+            <span><strong>Spesialisasi:</strong> Fondasi logika, soal cerita, &amp; olimpiade SD</span>
+            <span><strong>Gaya:</strong> Sabar, analogis, dan santai</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tutor-card" data-reveal>
+        <div class="tutor-img-wrap">
+          <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=500&q=80" alt="Kak Sinta R., S.Pd — Tutor Matematika" loading="lazy">
+        </div>
+        <div class="tutor-body">
+          <h4>Kak Sinta R., S.Pd</h4>
+          <p class="tutor-edu">S1 Pendidikan Matematika — Univ. Negeri Jakarta</p>
+          <div class="tutor-meta">
+            <span><strong>Pengalaman:</strong> 4+ tahun mengajar SMP &amp; SMA</span>
+            <span><strong>Spesialisasi:</strong> Aljabar, Geometri, dan persiapan PTS/PAS</span>
+            <span><strong>Gaya:</strong> Terstruktur, komunikatif, dan teliti</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tutor-card" data-reveal>
+        <div class="tutor-img-wrap">
+          <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=500&q=80" alt="Kak Dian P., S.Stat — Tutor Matematika" loading="lazy">
+        </div>
+        <div class="tutor-body">
+          <h4>Kak Dian P., S.Stat</h4>
+          <p class="tutor-edu">S1 Statistika — Institut Pertanian Bogor</p>
+          <div class="tutor-meta">
+            <span><strong>Pengalaman:</strong> 4 tahun mengajar SMA &amp; UTBK</span>
+            <span><strong>Spesialisasi:</strong> Penalaran Matematika, Peluang, &amp; SNBT</span>
+            <span><strong>Gaya:</strong> Trik pemecahan masalah cepat &amp; aplikatif</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS WITH REAL AVATARS ============ -->
+<section class="section">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <span class="section-tag">Testimoni</span>
+      <h2>Apa Kata Wali Murid &amp; Siswa Kami</h2>
+      <p>Kisah nyata dari keluarga yang mempercayakan pembelajaran matematikanya bersama Sohib Matematika.</p>
+    </div>
+
+    <div class="testi-summary" data-reveal>
+      <span class="stars">★★★★★</span>
+      <span class="score">4.9 / 5.0</span>
+      <span class="detail">berdasarkan 120+ evaluasi berkala wali murid</span>
+    </div>
+
+    <div class="testi-grid stagger">
+      <div class="testi-card" data-reveal>
+        <div>
+          <div class="testi-stars">★★★★★</div>
+          <blockquote>“Anak saya kelas 5 tadinya selalu menangis kalau ada PR matematika. Setelah 2 bulan les privat di sini, dia sekarang mengerjakan latihan sendiri tanpa disuruh. Tutornya sangat sabar menjelaskan.”</blockquote>
+        </div>
+        <div class="testi-author">
+          <div class="testi-avatar">
+            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=160&q=80" alt="Ibu Rina" loading="lazy">
+          </div>
+          <div>
+            <strong>Ibu Rina</strong>
+            <span>Orang Tua Siswa Kelas 5 SD</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="testi-card" data-reveal>
+        <div>
+          <div class="testi-stars">★★★★★</div>
+          <blockquote>“Nilai ulangan harian matematika anak saya naik dari 58 menjadi 85. Penjelasan tutornya mudah dimengerti dan ada laporan progres rutin tiap dua minggu yang dikirim ke WA saya.”</blockquote>
+        </div>
+        <div class="testi-author">
+          <div class="testi-avatar">
+            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=160&q=80" alt="Bapak Andi" loading="lazy">
+          </div>
+          <div>
+            <strong>Bapak Andi</strong>
+            <span>Orang Tua Siswa Kelas 8 SMP</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="testi-card" data-reveal>
+        <div>
+          <div class="testi-stars">★★★★★</div>
+          <blockquote>“Latihan soal HOTS dan penalaran matematika di sini sangat membantu persiapan SNBT. Tutornya tidak cuma kasih rumus, tapi ajarin alur logikanya sampai benar-benar paham.”</blockquote>
+        </div>
+        <div class="testi-author">
+          <div class="testi-avatar">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=160&q=80" alt="Salsa N." loading="lazy">
+          </div>
+          <div>
+            <strong>Salsa N.</strong>
+            <span>Siswa Kelas 12 SMA (Lolos PTN 2026)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRICING ============ -->
+<section class="section section-alt" id="harga">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <span class="section-tag">Biaya &amp; Paket</span>
+      <h2>Pilihan Paket Belajar Terjangkau</h2>
+      <p>Biaya transparan tanpa biaya registrasi tersembunyi. Disesuaikan dengan kebutuhan belajar anak.</p>
+    </div>
+
+    <!-- Filter Tabs -->
+    <div class="pricing-tabs" data-reveal>
+      <button class="pricing-tab-btn active" data-filter="all">Semua Paket</button>
+      <button class="pricing-tab-btn" data-filter="reguler">Reguler</button>
+      <button class="pricing-tab-btn" data-filter="privat">Privat</button>
+    </div>
+
+    <div class="pricing-grid stagger">
+      <div class="price-card" data-reveal data-type="reguler">
+        <div class="price-type">Reguler</div>
+        <div class="price-sessions">4 Sesi / Bulan</div>
+        <div class="price-amount">Rp 200.000</div>
+        <div class="price-per">± Rp 50.000 / sesi</div>
+        <ul class="price-features">
+          <li><svg class="check-ico" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Maksimal 5 siswa per sesi</li>
+          <li><svg class="check-ico" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Materi sesuai kurikulum sekolah</li>
+          <li><svg class="check-ico" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Latihan soal &amp; pembahasan lengkap</li>
+          <li><svg class="check-ico" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Durasi 75 menit / pertemuan</li>
+        </ul>
+        <a href="https://wa.me/6281234567890?text=Halo%2C%20saya%20ingin%20ambil%20paket%20Reguler%204%20sesi." class="btn btn-outline btn-block btn-sm" target="_blank" rel="noopener">Pilih Paket</a>
+      </div>
+
+      <div class="price-card popular" data-reveal data-type="reguler">
+        <div class="popular-top">Pilihan Terfavorit</div>
+        <div class="price-type">Reguler</div>
+        <div class="price-sessions">8 Sesi / Bulan</div>
+        <div class="price-amount">Rp 350.000 <span class="price-save">Hemat 12%</span></div>
+        <div class="price-per">± Rp 43.750 / sesi (2x seminggu)</div>
+        <ul class="price-features">
+          <li><svg class="check-ico" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Maksimal 5 siswa per sesi</li>
+          <li><svg class="check-ico" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Materi komprehensif &amp; review berkala</li>
+          <li><svg class="check-ico" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Laporan perkembangan belajar ke ortu</li>
+          <li><svg class="check-ico" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Durasi 75 menit / pertemuan</li>
+        </ul>
+        <a href="https://wa.me/6281234567890?text=Halo%2C%20saya%20ingin%20ambil%20paket%20Reguler%208%20sesi." class="btn btn-primary btn-block btn-sm" target="_blank" rel="noopener">Pilih Paket</a>
+      </div>
+
+      <div class="price-card" data-reveal data-type="privat">
+        <div class="price-type">Privat 1-on-1</div>
+        <div class="price-sessions">4 Sesi / Bulan</div>
+        <div class="price-amount">Rp 500.000</div>
+        <div class="price-per">± Rp 125.000 / sesi</div>
+        <ul class="price-features">
+          <li><svg class="check-ico" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>1 Tutor khusus mendampingi 1 Siswa</li>
+          <li><svg class="check-ico" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Materi disesuaikan 100% target anak</li>
+          <li><svg class="check-ico" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Jadwal fleksibel (bisa atur ulang)</li>
+          <li><svg class="check-ico" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Durasi 90 menit / pertemuan</li>
+        </ul>
+        <a href="https://wa.me/6281234567890?text=Halo%2C%20saya%20ingin%20ambil%20paket%20Privat%204%20sesi." class="btn btn-outline btn-block btn-sm" target="_blank" rel="noopener">Pilih Paket</a>
+      </div>
+
+      <div class="price-card" data-reveal data-type="privat">
+        <div class="price-type">Privat 1-on-1</div>
+        <div class="price-sessions">8 Sesi / Bulan</div>
+        <div class="price-amount">Rp 900.000 <span class="price-save">Hemat 10%</span></div>
+        <div class="price-per">± Rp 112.500 / sesi (Intensif)</div>
+        <ul class="price-features">
+          <li><svg class="check-ico" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>1 Tutor khusus mendampingi 1 Siswa</li>
+          <li><svg class="check-ico" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Pendampingan intensif PTS, PAS, &amp; Ujian</li>
+          <li><svg class="check-ico" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Prioritas pemilihan tutor &amp; jadwal</li>
+          <li><svg class="check-ico" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Durasi 90 menit / pertemuan</li>
+        </ul>
+        <a href="https://wa.me/6281234567890?text=Halo%2C%20saya%20ingin%20ambil%20paket%20Privat%208%20sesi." class="btn btn-outline btn-block btn-sm" target="_blank" rel="noopener">Pilih Paket</a>
+      </div>
+    </div>
+
+    <p class="price-note" data-reveal>*Tersedia pilihan sesi offline (datang ke center / guru ke rumah) maupun online via Google Meet interaktif.</p>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="section" id="faq">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <span class="section-tag">Tanya Jawab</span>
+      <h2>Pertanyaan yang Sering Diajukan</h2>
+      <p>Punya pertanyaan lain? Tim admin kami siap membantu melalui WhatsApp.</p>
+    </div>
+
+    <div class="faq-list">
+      <div class="faq-item" data-reveal>
+        <button class="faq-q" aria-expanded="false">
+          Apakah melayani siswa dari jenjang SD, SMP, dan SMA?
+          <span class="faq-icon"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+        </button>
+        <div class="faq-a"><div><p>Ya, Sohib Matematika melayani siswa dari jenjang SD (kelas 1–6), SMP (kelas 7–9), hingga SMA (kelas 10–12 termasuk persiapan SNBT/UTBK), baik untuk kurikulum Nasional (Kurikulum Merdeka) maupun Kurikulum Internasional.</p></div></div>
+      </div>
+
+      <div class="faq-item" data-reveal>
+        <button class="faq-q" aria-expanded="false">
+          Apa perbedaan mendasar antara program Reguler dan Privat?
+          <span class="faq-icon"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+        </button>
+        <div class="faq-a"><div><p>Program Reguler berupa kelas kecil berisi 3–5 siswa dengan jadwal yang sudah ditentukan per batch. Sedangkan program Privat merupakan pendampingan 1-on-1 (satu siswa satu tutor), di mana jadwal dan materi bisa disesuaikan sepenuhnya dengan kebutuhan spesifik anak.</p></div></div>
+      </div>
+
+      <div class="faq-item" data-reveal>
+        <button class="faq-q" aria-expanded="false">
+          Apakah tersedia pilihan les secara online?
+          <span class="faq-icon"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+        </button>
+        <div class="faq-a"><div><p>Tentu saja. Kami menyediakan kelas online interaktif menggunakan pen tablet dan papan tulis digital, sehingga anak serasa belajar langsung tatap muka. Cocok bagi siswa di luar area jangkauan offline.</p></div></div>
+      </div>
+
+      <div class="faq-item" data-reveal>
+        <button class="faq-q" aria-expanded="false">
+          Apakah ada sesi coba (trial class) terlebih dahulu?
+          <span class="faq-icon"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+        </button>
+        <div class="faq-a"><div><p>Ada. Kami menyediakan sesi asesmen dan kelas percobaan agar anak dapat merasakan langsung kecocokan gaya mengajar tutor kami sebelum Anda memutuskan mendaftar paket bulanan.</p></div></div>
+      </div>
+
+      <div class="faq-item" data-reveal>
+        <button class="faq-q" aria-expanded="false">
+          Bagaimana cara pembayaran dan apakah bisa dicicil?
+          <span class="faq-icon"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+        </button>
+        <div class="faq-a"><div><p>Pembayaran dilakukan per paket bulanan via transfer bank atau e-wallet resmi. Tidak ada biaya registrasi tambahan atau komitmen kontrak jangka panjang.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA FINAL WITH REAL PHOTO OVERLAY ============ -->
+<section class="cta-section">
+  <div class="container">
+    <h2 data-reveal>Mulai Perjalanan Belajar Matematika yang Menyenangkan</h2>
+    <p data-reveal>Diskusikan tantangan belajar putra-putri Anda bersama konsultan akademik kami. Kami siap mencarikan solusi dan tutor yang paling pas.</p>
+    <div class="cta-buttons" data-reveal>
+      <a href="https://wa.me/6281234567890?text=Halo%20Sohib%20Matematika%2C%20saya%20ingin%20konsultasi%20gratis." class="btn btn-wa" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+        Konsultasi Gratis via WhatsApp
+      </a>
+      <a href="https://wa.me/6281234567890?text=Halo%2C%20saya%20ingin%20daftar%20kelas%20percobaan." class="btn btn-outline-light" target="_blank" rel="noopener">
+        Daftar Kelas Percobaan
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="logo">
+          <span class="logo-mark">S</span>
+          Sohib Matematika
+        </a>
+        <p>Bimbingan belajar matematika untuk jenjang SD, SMP, dan SMA. Berorientasi pada pemahaman konsep dan pendampingan yang personal.</p>
+      </div>
+      <div>
+        <h5>Navigasi</h5>
+        <ul>
+          <li><a href="#program">Program</a></li>
+          <li><a href="#jenjang">Jenjang</a></li>
+          <li><a href="#tutor">Tutor</a></li>
+          <li><a href="#harga">Harga</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Hubungi Kami</h5>
+        <ul>
+          <li><a href="https://wa.me/6281234567890" target="_blank" rel="noopener">0812-3456-7890 (WhatsApp)</a></li>
+          <li><a href="mailto:info@sohibmatematika.id">info@sohibmatematika.id</a></li>
+          <li>Senin – Sabtu: 08.00 – 20.00 WIB</li>
+        </ul>
+      </div>
+      <div>
+        <h5>Sosial Media</h5>
+        <ul>
+          <li><a href="https://instagram.com/sohibmatematika" target="_blank" rel="noopener">Instagram @sohibmatematika</a></li>
+          <li><a href="https://tiktok.com/@sohibmatematika" target="_blank" rel="noopener">TikTok @sohibmatematika</a></li>
+          <li><a href="https://wa.me/6281234567890" target="_blank" rel="noopener">WhatsApp Resmi</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Sohib Matematika. Seluruh hak cipta dilindungi undang-undang.</span>
+      <span>Didedikasikan untuk kemajuan pendidikan anak Indonesia.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ FLOATING WHATSAPP & BACK TO TOP ============ -->
+<a href="https://wa.me/6281234567890?text=Halo%20Sohib%20Matematika%2C%20saya%20ingin%20konsultasi%20gratis." class="wa-float" target="_blank" rel="noopener" aria-label="Chat via WhatsApp">
+  <svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+</a>
+<button class="back-top" id="backTop" aria-label="Kembali ke atas">
+  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+</button>
+
+<!-- ============ INTERACTIVE SCRIPTS ============ -->
+<script>
+  /* ===== Header scroll effect ===== */
+  const header = document.getElementById('header');
+  window.addEventListener('scroll', () => {
+    header.classList.toggle('scrolled', window.scrollY > 15);
+  }, { passive: true });
+
+  /* ===== Mobile menu toggle ===== */
+  const menuToggle = document.getElementById('menuToggle');
+  const navLinks = document.getElementById('navLinks');
+  menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('open');
+    menuToggle.classList.toggle('open');
+  });
+  navLinks.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => {
+      navLinks.classList.remove('open');
+      menuToggle.classList.remove('open');
+    });
+  });
+
+  /* ===== Pricing Filter Tabs ===== */
+  const tabButtons = document.querySelectorAll('.pricing-tab-btn');
+  const priceCards = document.querySelectorAll('.price-card');
+  tabButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      tabButtons.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const filter = btn.dataset.filter;
+      priceCards.forEach(card => {
+        if (filter === 'all' || card.dataset.type === filter) {
+          card.classList.remove('hidden');
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+    });
+  });
+
+  /* ===== Scrollspy for Nav Links ===== */
+  const sections = document.querySelectorAll('section[id]');
+  const navAnchorLinks = document.querySelectorAll('.nav-links a:not(.btn)');
+
+  function updateActiveNavLink() {
+    const scrollY = window.pageYOffset;
+    sections.forEach(sec => {
+      const sectionHeight = sec.offsetHeight;
+      const sectionTop = sec.offsetTop - 120;
+      const sectionId = sec.getAttribute('id');
+      if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+        navAnchorLinks.forEach(link => {
+          link.classList.remove('active');
+          if (link.getAttribute('href') === '#' + sectionId) {
+            link.classList.add('active');
+          }
+        });
+      }
+    });
+    if (scrollY < 200) {
+      navAnchorLinks.forEach(link => link.classList.remove('active'));
+    }
+  }
+  window.addEventListener('scroll', updateActiveNavLink, { passive: true });
+
+  /* ===== FAQ Accordion ===== */
+  document.querySelectorAll('.faq-item').forEach(item => {
+    const btn = item.querySelector('.faq-q');
+    btn.addEventListener('click', () => {
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(i => {
+        i.classList.remove('open');
+        i.querySelector('.faq-q').setAttribute('aria-expanded', 'false');
+      });
+      if (!isOpen) {
+        item.classList.add('open');
+        btn.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+
+  /* ===== Scroll reveal ===== */
+  const reveals = document.querySelectorAll('[data-reveal]');
+  if ('IntersectionObserver' in window) {
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('revealed');
+          obs.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -30px 0px' });
+    reveals.forEach(el => obs.observe(el));
+  } else {
+    reveals.forEach(el => el.classList.add('revealed'));
+  }
+
+  /* ===== Back to top button ===== */
+  const backTop = document.getElementById('backTop');
+  window.addEventListener('scroll', () => {
+    backTop.classList.toggle('show', window.scrollY > 500);
+  }, { passive: true });
+  backTop.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+</script>
+
+</body>
+</html>
